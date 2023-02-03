@@ -71,8 +71,8 @@ def clear():
     os.system('clear')
     print(logo)
 logo =f"""____________________
-AUTHOR    : MR JADUGAR GAMERS
-FACEBOOK : KASHIF BALOCH
+AUTHOR    : RJ SHANTO
+FACEBOOK : RJ SHANTO
 VERSION    : 1.1
                                    [THE DEAD USER]
 ____________________"""
@@ -139,7 +139,7 @@ def xyz():
     Kashif = input("[√] CHOOSE : ")
     if Kashif in ["1","01"]:
         Random()
-    elif Kashif in ["0","00"]:
+    elif rj shanto in ["0","00"]:
        exit()
     else:
         print('\033[1;31mINCORECT OPTION!\033[1;31m')
